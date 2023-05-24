@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOUM</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Tourney:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/cafe.js"></script>
 </head>
 <body>
     <header>
         <!-- header top-->
     <div class="container d-flex justify-content-between">
-        <a href="#" class="mainlogo"><img src="images/logo.png" alt="#"></a>
+        <a href="#" class="mainlogo"><img src="images/logo1.png" alt="#"></a>
         <ul class="top-nav d-flex list-style-none">
             <li><a href="#" class="loging">로그인</a></li>
             <li>
@@ -36,24 +37,24 @@
                     <!-- 아이콘 4개-->
                     <ul class="text-center icon-list list-style-none d-flex justify-content-between">
                         <li><a href="#">
-                               <img src="images/01.png" alt="#">
+                               <img src="./images/01.png" alt="#">
                                카페    
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="images/02.png" alt="#">
+                                <img src="./images/02.png" alt="#">
                                 커피    
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="images/03.png" alt="#">
+                                <img src="./images/03.png" alt="#">
                                 회식     
                             </a>
                         </li>
                         <li><a href="#">
-                            <img src="images/04.png" alt="#">
+                            <img src="./images/04.png" alt="#">
                                 채팅 
                             </a>
                         </li>
@@ -62,28 +63,29 @@
                     <ul class="map-list d-flex list-style-none">
                         <li>
                             <a href="#">블로그</a>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
+                            <a href="#">티스토리</a>
+                            <a href="#">브런치</a>
+                            <a href="#">카카오TV</a>
                         </li>
                         <li>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
+                            <a href="#">스포츠</a>
+                            <a href="ㅊ#">연예</a>
+                            <a href="#">웹툰</a>
+                            <a href="#">멜론</a>
                         </li>
                         <li>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
+                            <a href="#">어학사전</a>
+                            <a href="#">번역기</a>
+                            <a href="#">백과사전</a>
+                            <a href="#">단어장</a>
                         </li>
                         <li>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
-                            <a href="#">블로그</a>
+                            <a href="#">금융</a>
+                            <a href="#">부동산</a>
+                            <a href="#">자동차</a>
+                            <a href="#">뉴스</a>
                         </li>
+
                     </ul>
                     <a href="#" class="all text-center">전체보기</a>
                 </div>
@@ -93,8 +95,353 @@
      <!--/header top-->
 
      <!-- header main-->
+     <div class="main-header container d-flex align-items-center">
+         <a href="#"class="logo d-block"><img src="./images/mainlogo.png" alt=""></a><!-- <a href="#" class="logo d-block">coffee</a> -->
+         <ul class="nav list-style-none d-flex">
+             <li><a href="#">홈</li>
+             <li><a href="#">팬카페</a></li>   
+             <li><a href="#">카페랭킹</a></li> 
+             <li><a href="#">니카페</a></li>
+             <li class="last"><a href="#">온라인 교실</a></li> 
+         </ul>
+         <form id="searchform" method="get">
+            <div class="selectbox">
+               <a href="#" class="search-select">카페검색
+               <i class="fa-solid fa-angle-down"></i></a>
+               <div class="search-sbox">
+                  <a href="#">카페검색</a>
+                  <a href="#">통합검색</a>
+                  <a href="#">카페이름</a>
+                  <a href="#">카페글</a>
+               </div>
+            </div>
+            <input type="hidden" name="selectbox" id="selectbox">
+            <input type="text" name="searchtext" id="searchtext" placeholder="검색어를 입력하세요."/>
+            <button type="submit" class="btn-none"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </form>
 
+     </div>    
      <!-- /header main-->
     </header>  
+    <!-- hero -->
+    <section class="hero container">
+        <!-- loop -->
+        <div class="new zindex">
+            <h1>이야기 하나 <strong>닌텐도는 그때도 맞고 지금도 맞다</strong></h1>
+            <ul class="list-style-none">
+                <li><a href="#"><span class="list">중국 표절겜에 극대노한 닌텐도</span><span class="cafe-name">이종격투기</span></a></li>
+                <li><a href="#"><span class="list">닌텐도 스위치 입문자를 위한 가이드</span><span class="cafe-name">樂soccer</span></a></li>
+                <li><a href="#"><span class="list">슈퍼마리오 초고수 플레이</span><span class="cafe-name">이종격투기</span></a></li>
+                <li><a href="#"><span class="list">동물의 숲 환불사유라는데</span><span class="cafe-name">수땡이의_동물의_숲</span>
+                </a></li>
+            </ul>
+        </div>
+        <div class="new">
+            <h1>이야기 둘 <strong>세상은 넓고 특이한 사람은 더 많다</strong></h1>
+            <ul class="list-style-none">
+                <li><a href="#"><span class="list">도서관 자리 경쟁자 제거방법</span><span class="cafe-name">이종격투기</span></a></li>
+                <li><a href="#"><span class="list">903호 아주머니의 층간소음 해결법.jpg</span><span class="cafe-name">樂soccer</span></a></li>
+                <li><a href="#"><span class="list">헬스클럽에서 하루만에 쫓겨나는 법</span><span class="cafe-name">이종격투기</span></a></li>
+                <li><a href="#"><span class="list">휴가 나온 오빠가 동생한테 요구한것 </span><span class="cafe-name">수땡이의_동물의_숲</span>
+                </a></li>
+            </ul>
+        </div>
+        <div class="new">
+            <h1>이야기 셋 <strong>제가 낯을 좀 가리는 편이라서요</strong></h1>
+            <ul class="list-style-none">
+                <li><a href="#"><span class="list">우리나라에서는 하기 어려운 식사문화 </span><span class="cafe-name">이종격투기</span></a></li>
+                <li><a href="#"><span class="list">글제목낯가림 심했던 남배우의 연애썰.jpg </span><span class="cafe-name">방석 위로 모여라</span></a></li>
+                <li><a href="#"><span class="list">낯가림 심하고 극내향인 사람이 배우가 되는 경우</span><span class="cafe-name">*여성시대</span></a></li>
+                <li><a href="#"><span class="list">글제목찐 내향인과 외향인의 낯가림의 차이</span><span class="cafe-name">*여성시대</span>
+                </a></li>
+            </ul>
+        </div>
+        <div class="new">
+            <h1>이야기 넷 <strong>리스펙~극한의 환경에서 일하는 사람들</strong></h1>
+            <ul class="list-style-none">
+                <li><a href="#"><span class="list">출정 교도관이 꼽은 가장 힘들었던 업무 </span><span class="cafe-name">이종격투기</span></a></li>
+                <li><a href="#"><span class="list">글제목극한 직업 술집 알바</span><span class="cafe-name">樂soccer</span></a></li>
+                <li><a href="#"><span class="list">글제목우리나라 흉부외과 최고권위자라는 송석원 교수</span><span class="cafe-name">*여성시대</span></a></li>
+                <li><a href="#"><span class="list">콜센터 근무 현실..</span><span class="cafe-name">내가 아는 카페</span>
+                </a></li>
+            </ul>
+        </div>
+        <div class="new">
+            <h1>이야기 다섯 <strong>닌텐도는 그때도 맞고 지금도 맞다</strong></h1>
+            <ul class="list-style-none">
+                <li><a href="#"><span class="list">중국 표절겜에 극대노한 닌텐도</span><span class="cafe-name">이종격투기</span></a></li>
+                <li><a href="#"><span class="list">닌텐도 스위치 입문자를 위한 가이드</span><span class="cafe-name">樂soccer</span></a></li>
+                <li><a href="#"><span class="list">슈퍼마리오 초고수 플레이</span><span class="cafe-name">이종격투기</span></a></li>
+                <li><a href="#"><span class="list">동물의 숲 환불사유라는데</span><span class="cafe-name">수땡이의_동물의_숲</span>
+                </a></li>
+            </ul>
+        </div>
+        <!-- /loop -->
+    </section>
+    <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+    <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+    <!-- best cafe6 -->
+    <section class="best">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="#" class="best-link">
+                        <div class="img" style="background-position: -10px -10px;"></div>
+                        <h1 class="ellipise">밀리토리네</h1>
+                        <p class="ellipise">여성 전용 커뮤니티 이며 카페인 [밀리토리네]예요. 트위터도 있습니다.</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>밀리토리네</span>
+                            <span>밀토</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="best-link">
+                        <div class="img" style="background-position: -240px -10px;"></div>
+                        <h1 class="ellipise">밀리토리네</h1>
+                        <p class="ellipise">여성 전용 커뮤니티 이며 카페인 [밀리토리네]예요. 트위터도 있습니다.</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>밀리토리네</span>
+                            <span>밀토</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="best-link">
+                        <div class="img" style="background-position: -466px -10px;"></div>
+                        <h1 class="ellipise">밀리토리네</h1>
+                        <p class="ellipise">여성 전용 커뮤니티 이며 카페인 [밀리토리네]예요. 트위터도 있습니다.</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>밀리토리네</span>
+                            <span>밀토</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="best-link">
+                        <div class="img" style="background-position: -12.5px -128px;"></div>
+                        <h1 class="ellipise">밀리토리네</h1>
+                        <p class="ellipise">여성 전용 커뮤니티 이며 카페인 [밀리토리네]예요. 트위터도 있습니다.</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>밀리토리네</span>
+                            <span>밀토</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="best-link">
+                        <div class="img" style="background-position: -240px -128px;"></div>
+                        <h1 class="ellipise">밀리토리네</h1>
+                        <p class="ellipise">여성 전용 커뮤니티 이며 카페인 [밀리토리네]예요. 트위터도 있습니다.</p>
+                        <div class="hash">
+                            <span>추천카페</span>
+                            <span>밀리토리네</span>
+                            <span>밀토</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4"><a href="#" class="best-link">
+                    <div class="img" style="background-position: -125px -10px;"></div>
+                    <h1 class="ellipise">밀리토리네</h1>
+                    <p class="ellipise">여성 전용 커뮤니티 이며 카페인 [밀리토리네]예요. 트위터도 있습니다.</p>
+                    <div class="hash">
+                        <span>추천카페</span>
+                        <span>밀리토리네</span>
+                        <span>밀토</span>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="cafe-list container">
+        <div class="row">
+            <div class="col-9">
+                <div class="tiltle-box d-flex justify-content-between align-items-center">
+                    <h1>카페 인기글</h1>
+                    <div class="thetime"></div>
+                </div>
+                <ul class="clist">
+                    <li class="d-flex align-items-center justify-content-between">
+                        <div class="tbox d-flex align-items-center">
+                            <img src="https://picsum.photos/id/212/110/70" alt="237">
+                            <h1>1</h1>
+                            <p class="ellipise">내일부터 35%인상 ee.jpg</p>
+                        </div>
+                        <div class="cfe d-flex">
+                            <p class="ellipise">도탁스(DOTAX)</p>
+                            <p class="dg">26</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="page text-center">
+                    <span class="prv"><i class="fa-solid fa-angle-left"></i></span>
+                    <span class="strong">1</span>
+                    <span class="lst">10</span>
+                    <span class="nxt"><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+            </div>
+            <div class="col-3">
+                <h1>공지</h1>
+                <ul class="notice-list">
+                    <li class="ellipise"><a href="#">[안내] NEW 사진 편집기 오픈!</a></li>
+                    <li class="ellipise"><a href="#">[안내] 대문 꾸미기 '다음 에디터' 서비스 종료 안내</a></li>
+                    <li class="ellipise"><a href="#">[안내] 카페앱 대문 꾸미기 '대문m+'</a></li>
+                    <li class="ellipise"><a href="#">[안내] 우리 카페 홍보 신청 방법(new)을 안내해 드려요~!</a></li>
+                    <li class="ellipise"><a href="#">[안내] 우리카페 공식팬카페 신청하기</a></li>
+                </ul>
+                <h1>카페 지원 안내</h1>
+                <div class="smallbanner">
+                    <div class="niniz">
+                        <h1>니니즈와 함께하는<br>서포터즈카페<br>구경오실래요?</h1>
+                        <div class="face">
+                            <span class="eye leye"></span>
+                            <span class="eye reye"></span>
+                            <span class="nose">
+                                <span class="nostrils"></span>
+                                <span class="nostrils rnostrils"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- <div class="rabbit"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fancafe">
+        <div class="container">
+            <div class="row">
+                <h1 class="col-11">
+                <span class="fancafe-logo">
+                    <i class="fa-solid fa-book-skull"></i>
+                </span>팬카페
+                </h1>
+                <div class="col-1 text-rgiht alltext">
+                    <a href="#">전체보기</a>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/m1.png" alt="m1">
+                            <div class="ctbox">
+                                1
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/m1.png" alt="m1">
+                            <div class="tbox">
+                                <h1>마이멜로디</h1>
+                                <span>카페 1등</span>
+                                <span>응원 1등</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/m2.png" alt="m2">
+                            <div class="ctbox">
+                                2
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/m2.png" alt="m2">
+                            <div class="tbox">
+                                <h1>시나모롤</h1>
+                                <span>카페 2등</span>
+                                <span>응원 2등</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/m3.jpg" alt="m3">
+                            <div class="ctbox">
+                                3
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/m3.jpg" alt="m3">
+                            <div class="tbox">
+                                <h1>폼폼푸린</h1>
+                                <span>카페 3등</span>
+                                <span>응원 3등</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="category container">
+        <h1><strong>카테고리</strong> 별 랭킹 보기</h1>
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="strong">생활 · 경제</a>
+                <a href="#" >생활 · 건강</a>
+                <a href="#" >경제 · 금융</a>
+                <a href="#" >정치 · 사회</a>
+                <a href="#" class="strong">팬카페</a>
+            </div>
+            <div class="col-12">
+                <a href="#" class="strong">친목 · 모임</a>
+                <a href="#" >친목 </a>
+                <a href="#" >여성</a>
+                <a href="#" class="strong">게임 · 만화</a>
+                <a href="#" >만화 · 애니메이션</a>
+                <a href="#" >게임</a>
+            </div>
+            <div class="col-12">
+                <a href="#" class="strong">취미 · 레저</a>
+                <a href="#" >취미</a>
+                <a href="#" >스포츠 · 레저</a>
+                <a href="#" class="strong">연예 · 예술</a>
+                <a href="#" >영화</a>
+                <a href="#" >음악</a>
+                <a href="#" >방송 · 연예</a>
+                <a href="#" >문학 · 예술</a>
+            </div>
+            <div class="col-12">
+                <a href="#" class="strong">지역 · 동문</a>
+                <a href="#" >동창 · 동문</a>
+                <a href="#" >스포츠 · 레저</a>
+                <a href="#" >지역 · 고향</a>
+                <a href="#" >e-마을 </a>
+                <a href="#" >군대 </a>
+                <a href="#" >종교</a>
+            </div>
+            <div class="col-12">
+                <a href="#" class="strong">학문 · 교육</a>
+                <a href="#" >교육 · 외국어</a>
+                <a href="#" >컴퓨터 · 인터넷</a>
+                <a href="#" >과학 · 인문</a>
+                <a href="#" >대학 ·대학원</a>
+                <a href="#" >초중고교</a>
+            </div>
+        </div>
+    </section>
+    <footer class="container">
+        <a href="#" class="footerlogo"><img src="./images/mainlogo1.png" alt=""></a>
+        <ul class="footer-nav">
+            <li><a  hrfe="#">서비스 약관/정책</a></li>
+            <li><a hrfe="#">권리침해신고</a></li>
+            <li><a hrfe="#">이용약관</a></li>
+            <li><a hrfe="#">상거래 피해구제신청</a></li>
+            <li><a hrfe="#">카페운영정책</a></li>
+            <li><a hrfe="#">청소년보호정책</a></li>
+            <li><a hrfe="#" class="strong">개인정보처리방침</a></li>
+            <li><a hrfe="#">고객센터</a></li>
+            <li><a hrfe="#">문의하기</a></li>
+        </ul>
+        <p>&copy;ckocko corp.</p>
+    </footer>
+    <a href="#" class="angletop"><i class="fa-solid fa-angle-up"></i></a>
 </body>
 </html>

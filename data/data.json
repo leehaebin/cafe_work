@@ -1,0 +1,72 @@
+{"cafelist":[
+    {
+        "img": "https://picsum.photos/id/210/110/70",
+        "num": 1,
+        "content" : "내일부터 35%인상 ee.jpg",
+        "cafename" : "도탁스(DOTAX)",
+        "comment" : 30
+    },
+    {
+        "img": "https://picsum.photos/id/220/110/70",
+        "num": 2,
+        "content" : "연애 경험 없는 45살 성실맨의 하루 일과",
+        "cafename" : "소울드레서 (SoulDresser)",
+        "comment" : 59
+    },
+    {
+        "img": "https://picsum.photos/id/230/110/70",
+        "num": 3,
+        "content" : "밖에서 놀다가 아기사슴 데려온 4살 아들",
+        "cafename" : "＊여성시대＊",
+        "comment" : 44
+    },
+    {
+        "img": "https://picsum.photos/id/237/110/70",
+        "num": 4,
+        "content" : "요즘 급식으로 나오면 쓰레기통 직행이라는 반찬 모음.jpg",
+        "cafename" : "소울드레서 (SoulDresser",
+        "comment" : 144
+    },
+    {
+        "img": "https://picsum.photos/id/240/110/70",
+        "num": 5,
+        "content" : "블아필 라도식 아이돌 예명 짓기...........jpg",
+        "cafename" : "＊여성시대＊",
+        "comment" : 67
+    },
+    {
+        "img": "https://picsum.photos/id/255/110/70",
+        "num": 6,
+        "content" : "내일부터 35%인상 ee.jpg",
+        "cafename" : "도탁스(DOTAX)",
+        "comment" : 30
+    },
+    {
+        "img": "https://picsum.photos/id/259/110/70",
+        "num": 7,
+        "content" : "집 계약 전 윗집 현관을 꼭 확인해야하는 이유",
+        "cafename" : "이종격투기",
+        "comment" : 10
+    },
+    {
+        "img": "https://picsum.photos/id/270/110/70",
+        "num": 8,
+        "content" : "정리정돈 못하는 사람 특 알아 냄..ㅎㅎㅎ",
+        "cafename" : "＊여성시대＊",
+        "comment" : 43
+    },
+    {
+        "img": "https://picsum.photos/id/278/110/70",
+        "num": 9,
+        "content" : "보기엔 그냥 풀인데 얼마나 맛있길래 그러는지 궁금한 요리",
+        "cafename" : "이종격투기",
+        "comment" : 34
+    },
+    {
+        "img": "https://picsum.photos/id/299/110/70",
+        "num": 10,
+        "content" : "11살짜리한테 결혼식 축하연설을 맡기면 일어나는일",
+        "cafename" : "도탁스(DOTAX)",
+        "comment" : 20
+    }
+]}
