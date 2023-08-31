@@ -149,6 +149,9 @@ a.all{
     text-shadow:0 0 10px #ff5656;
     width:15%;
 }
+.logo>img{
+    width: 100px;
+}
 .nav{
     width:60%;
 }
@@ -416,59 +419,23 @@ p.dg::before{
     font-size: 1.2em;
     font-weight: 400;
 }
+.smallbanner{
+    width: 700px;
+}
+
 .niniz{
-    background-color: #4260aa;
-    height: 200px;
+    width: 300px;
+    height: 180px;
     position: relative;
     overflow: hidden;
 }
-.face{
-    width: 250px;
-    height: 220px;
-    background-color: #fff;
-    border: 5px solid #000;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -70px;
-    right: -80px;
+.nini1>img,
+.nini2>img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
 }
-.eye{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #000;
-    top:80px;
-}
-.leye{
-    right: 150px;
-}
-.reye{
-    right: 110px;
-}
-.nose{
-    width: 50px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: #a8e6ff;
-    position: absolute;
-    top:90px;
-    left: 85px;
-    overflow: hidden;
-}
-.nostrils{
-    border: 3px solid #000;
-    border-radius: 50%;
-    width: 40px;
-    height: 38px;
-    left: -13px;
-    top: -12px;
-    display: inline-block;
-    position: absolute;
-}
-.rnostrils{
-    left: 22px;
-}
+
 .niniz h1{
     font-size:1.4em;
     color:#fff;
@@ -501,6 +468,7 @@ strong{
 }
 .alltext{
     align-self: center;
+    text-align: end;
 }
 .fa-book-skull{
     color: #ff5656;
